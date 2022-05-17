@@ -4,7 +4,7 @@ class VendingMachineView < BaseView
   def successfull_purchase(product, inserted, credited)
     change = credited.tally.map { |a, v| "#{a}*#{v}" }.join(" ")
     puts "---- Succesfull Purchase ----"
-    puts "You payed #{inserted.sum} for #{product.name} and received #{change} for a total of #{credited.sum} change"
+    puts "You payed #{inserted.sum} for #{product.name} and received #{change} for a total of #{credited.sum} change\n\n"
   end
 
   def invalid_change
@@ -19,6 +19,6 @@ class VendingMachineView < BaseView
 
   def unsuccesfull_purchase
     puts "-**-  Unsuccesfull Purchase -**-"
-    puts "Sorry, your purchase has failed"
+    puts "Sorry, your purchase has failed\n\n"
   end
 end

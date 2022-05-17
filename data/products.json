@@ -1,5 +1,8 @@
 [
-  { "name": "cola", "price": 1.0, "quantity": 2 },
-  { "name": "pepsi", "price": 2.50, "quantity": 10 },
-  { "name": "sprite", "price": 4.25, "quantity": 5 }
+  { "name": "cola", "price": 1.25, "quantity": 5 },
+  { "name": "pepsi", "price": 2.75, "quantity": 10 },
+  { "name": "sprite", "price": 4.5, "quantity": 15 },
+  { "name": "chips", "price": 1.0, "quantity": 5 },
+  { "name": "chocolate", "price": 2.5, "quantity": 10 },
+  { "name": "bamba", "price": 3.75, "quantity": 15 }
 ]

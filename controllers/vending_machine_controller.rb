@@ -39,7 +39,11 @@ class VendingMachineController
   def accept_coins(total)
     inserted_coins = []
     while inserted_coins.sum < total
-      inserted_coins << choose_coin
+      coin = choose_coin
+      next if coin.nil?
+
+      inserted_coins << coin
+      @coin_view.display_inserted_coins(inserted_coins)
     end
     inserted_coins
   end

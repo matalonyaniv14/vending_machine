@@ -79,17 +79,8 @@ describe "VendingMachineController", :vending_machine_controller do
         product = repo.all.first
         product.quantity = 0
 
-        expect { controller.make_purchase }.to output(/.+product not in stock, please try a different product.+/m).to_stdout_from_any_process
+        expect { controller.make_purchase }.to output(/.+Unsuccesfull Purchase.+/m).to_stdout_from_any_process
       end
     end
-
-    # describe "when there is not enough coins to process the purchase" do
-    #   it "should display an error message" do
-    #     allow_any_instance_of(Object).to receive(:gets).and_return("")
-    #     repo = controller.instance_variable_get(:@coin_repository)
-    #     allow(repo).to receive(:all).and_return({})
-    #     expect { controller.make_purchase }.to output(/.+unable to return change, please insert different denominations+/m).to_stdout_from_any_process
-    #   end
-    # end
   end
 end

@@ -13,19 +13,9 @@ task :product do
   sh "rspec -t product"
 end
 
-desc "Launch tests for base_repository"
-task :base_repository do
-  sh "rspec -t base_repository"
-end
-
 task :coin_repository do
   desc "Launch tests for coin_repository"
   sh "rspec -t coin_repository"
-end
-
-desc "Launch tests for product_repository"
-task :product_repository do
-  sh "rspec -t product_repository"
 end
 
 desc "Launch tests for vending_machine_controller"
@@ -39,7 +29,15 @@ task :calculate_change_service do
 end
 
 task default: [:spec]
+
+desc "Launch all model tests"
 task models: [:coin, :product]
-task repositories: [:base_repository, :coin_repository, :product_repository]
+
+desc "launch all repository tests"
+task repositories: [:coin_repository]
+
+desc "launch all controller tests"
 task controllers: [:vending_machine_controller]
+
+desc "launch all service tests"
 task services: [:calculate_change_service]

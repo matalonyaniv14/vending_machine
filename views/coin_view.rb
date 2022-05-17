@@ -1,8 +1,12 @@
 require_relative "base_view"
 
 class CoinView < BaseView
+  def display_inserted_coins(coins)
+    puts "Inserted coins: #{coins}"
+  end
+
   def display_coins(coins)
-    "---- Coins ----"
+    puts "---- Coins ----"
     display(coins)
   end
 

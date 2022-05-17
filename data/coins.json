@@ -1,8 +1,8 @@
 [
-  { "value": 0.25, "quantity": 2 },
-  { "value": 0.5, "quantity": 2 },
-  { "value": 1.0, "quantity": 2 },
-  { "value": 2.0, "quantity": 2 },
-  { "value": 3.0, "quantity": 10 },
-  { "value": 5.0, "quantity": 2 }
+  { "value": 0.25, "quantity": 5 },
+  { "value": 0.5, "quantity": 5 },
+  { "value": 1.0, "quantity": 5 },
+  { "value": 2.0, "quantity": 3 },
+  { "value": 3.0, "quantity": 3 },
+  { "value": 5.0, "quantity": 3 }
 ]
